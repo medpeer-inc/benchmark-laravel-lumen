@@ -10,15 +10,15 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/laravel-lumen-benchmark
-      to: /home/vagrant/laravel-lumen-benchmark
+    - map: ~/benchmark-laravel-lumen
+      to: /home/vagrant/benchmark-laravel-lumen
       type: "nfs"
 
 sites:
     - map: laravel.app
-      to: /home/vagrant/laravel-lumen-benchmark/laravel/public
+      to: /home/vagrant/benchmark-laravel-lumen/laravel/public
     - map: lumen.app
-      to: /home/vagrant/laravel-lumen-benchmark/lumen/public
+      to: /home/vagrant/benchmark-laravel-lumen/lumen/public
 
 databases:
     - homestead

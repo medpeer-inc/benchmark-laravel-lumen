@@ -11,7 +11,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             DB::table('users')->insert([
               'name' => str_random(10),
               'email' => str_random(10) . '@gmail.com',

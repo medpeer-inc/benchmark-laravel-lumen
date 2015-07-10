@@ -30,20 +30,7 @@ HomesteadのVagrant環境を立ち上げて、sshログインしてください�
 
 ## サンプルデータの準備
 
-サンプルデータのデータベースをHomestead内のMySQLに作成します。
-
-次のコマンドでテーブルを作成してください。
-
-	cd ~/benchmark-laravel-lumen/laravel/
-	php artisan migrate
-
-次のコマンドでサンプルデータをロードしてください。
-
-	php artisan db:seed
-
-## Laravelの準備
-
-Laravelの依存パッッケージをcomposerで取得してください。 
+サンプルデータを準備します。テーブル作成とデータ投入はLaravelのMigration機能とSeeding機能を使用します。まず、Laravelの依存パッッケージをcomposerで取得してください。 
  
 	cd ~/benchmark-laravel-lumen/laravel/
 	composer install
@@ -51,6 +38,16 @@ Laravelの依存パッッケージをcomposerで取得してください。
 環境設定ファイルをコピーしてください。
 
 	cp .env.example .env
+
+次のコマンドでテーブルを作成してください。
+
+	php artisan migrate
+
+次のコマンドでテーブルにレコードを作成してください。
+
+	php artisan db:seed
+
+## Laravelの準備
 
 アプリケーションキーを生成してください。
 
